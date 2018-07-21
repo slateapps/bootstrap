@@ -1,4 +1,4 @@
-# Slate bootstrap file (main) - 90199
+# Slate bootstrap file (testnet) - 23439
 
 ### How to install
 
@@ -13,19 +13,19 @@ Normally the Slate client will download the transaction and network information,
 **For Windows users:**
 Open explorer, and type into the address bar:
 
-	%APPDATA%\Slate
+	%APPDATA%\Slate\testnet4
     
 This will open up the data folder. It should look like the image below. Copy over the bootstrap.dat from your download folder to this directory.
 
 **For OSX users:**
 Open Finder by pressing Press [shift] + [cmd] + [g] and enter:
 
-	~/Library/Application Support/Slate/
+	~/Library/Application Support/Slate/testnet4
     
 **For Linux users:**
 The directory is hidden in your User folder. Go to:
 
-	~/.slate/
+	~/.slate/testnet4/
     
 ### Importing the blockchain
 Now start the Slate client software. It should show "Importing blocks from disk".
@@ -52,7 +52,7 @@ We simply cat all blk000*.dat files into bootstrap.dat
     1. Go to the folder where the blocks are. In this case Slate's folder (it's the same for other slate forks)
 
             ```            
-            cd "Library/Application Support/Slate/blocks/"
+            cd "Library/Application Support/Slate/testnet4/blocks/"
             ```
 
     1. concatenate all the blk files
@@ -77,7 +77,7 @@ This batch script can make your life easier on windows, you need to run it from 
     @echo off 
     setlocal enableDelayedExpansion 
 
-    set SLATEDATADIR=%APPDATA%\Slate\blocks
+    set SLATEDATADIR=%APPDATA%\Slate\testnet4\blocks
     for /F %%x in ('dir /B/D/ON %SLATEDATADIR%\blk*.*') do (
       IF NOT [!B!] == [] set B=!B!+
       set FILENAME=%SLATEDATADIR%\%%x
@@ -94,46 +94,46 @@ This batch script can make your life easier on windows, you need to run it from 
   - For advanced users - [manually](./../../#how-to-create-my-own-bootstrap)
 
 Bootstrap file (_bootstrap.dat_)
- - Block height: `90199`
- - Block hash: `4480d89de6711113608aa5cb5db8b17788fb81d01f91f10afbb272e83a017bd5`
- - Tx: `180497`
- - Date: `2018-07-21 14:11:52`
- - Date (epoch): `1532182312`
- - Progress: `1.000007`
- - Cache: `62`
+ - Block height: `23439`
+ - Block hash: `47bc8de5908b6d1fa8866465f33b15bc431332cc7d6fc9c4ce6c151fe98075fa`
+ - Tx: `46853`
+ - Date: `2018-07-21 14:51:01`
+ - Date (epoch): `1532184661`
+ - Progress: `0.999922`
+ - Cache: `46557`
 
-### Block 90199
+### Block 23439
 ```
 {
-  "hash": "dc344ac9467f96b9dcd1716adecbf7fd97067f1602a12b5efcb7a83dcb3521d9",
-  "confirmations": 8,
+  "hash": "47bc8de5908b6d1fa8866465f33b15bc431332cc7d6fc9c4ce6c151fe98075fa",
+  "confirmations": 23,
   "size": 569,
-  "height": 90199,
+  "height": 23439,
   "version": 2,
-  "merkleroot": "254632820daca23a521628344611bc8b188d80da984ed4fa270c40006a57aa36",
-  "acc_checkpoint": "14f07c370ae71178465c22e302b4e614f2c6e4ae6dfe6bc8d1cd53f464da2a23",
+  "merkleroot": "63d3519d20303811c402f5cbdaba7e4c8a15a83a34c360a90e5be325e4b4e132",
+  "acc_checkpoint": "53951b9e72977cab4742a4a48b88bb3f9cae816b2a74f5fd8fac8d1c85ceb518",
   "tx": [
-    "33341412fec2ff396dcdfd8523f51ce54a8677dda057d1b86628b66d91b02ffd",
-    "25a0fe0e57ca6fbd4c941cc3312b3160d8b44c0addc07d01f9cc7f927e51defb"
+    "384525c128368943314b0706fa41e5aa7a72dedb20eb6e404ba136220a4a5190",
+    "c174df7b940034b7f4ee0fc1219cbc2226df79054ebcbffaa975ad063754ccba"
   ],
-  "time": 1532182312,
+  "time": 1532184661,
   "nonce": 0,
-  "bits": "192c1aa8",
-  "difficulty": 97380951.66611773,
-  "chainwork": "00000000000000000000000000000000000000000000003036a7515903ef758e",
-  "previousblockhash": "bc2264004fe2ae841bfb8caf903568e145a968a306c5c94d506ed4a33138bb0e",
-  "nextblockhash": "e41679e1cc2f6209b36dde40587064e917d49d4f682f5b05f8a0d1b8c621f74d",
-  "moneysupply": 9499999998.76938975,
+  "bits": "1a01269f",
+  "difficulty": 14577713.03925858,
+  "chainwork": "000000000000000000000000000000000000000000000036e6cc5f4ecc662e6f",
+  "previousblockhash": "59da9555da92ef227f74bc903e168f463b6dd3b9480983f2a413b06338f365c8",
+  "nextblockhash": "7e3cedcc3ad4d201f9524bec584eb3a71f09bb0f54219ac7c00ab3a1d1a358a0",
+  "moneysupply": 949999999.99891330,
   "zSLXsupply": {
-    "1": 33.00000000,
-    "5": 75.00000000,
-    "10": 240.00000000,
-    "50": 750.00000000,
-    "100": 3100.00000000,
-    "500": 7000.00000000,
-    "1000": 24000.00000000,
-    "5000": 255000.00000000,
-    "total": 290198.00000000
+    "1": 11.00000000,
+    "5": 40.00000000,
+    "10": 80.00000000,
+    "50": 400.00000000,
+    "100": 800.00000000,
+    "500": 4000.00000000,
+    "1000": 7000.00000000,
+    "5000": 40000.00000000,
+    "total": 52331.00000000
   }
 }
 ```
@@ -141,8 +141,8 @@ Bootstrap file (_bootstrap.dat_)
 ### Genesis block
 ```
 {
-  "hash": "00000feb03167c4a4fa9f2bafcaea0e9f7e5646330e13c69e7ffa2dce58ace44",
-  "confirmations": 90207,
+  "hash": "0000065432f43b3efb23bd0f63fe33d00d02a5f36233fe1b982c08274d58ef12",
+  "confirmations": 738,
   "size": 290,
   "height": 0,
   "version": 1,
@@ -152,11 +152,11 @@ Bootstrap file (_bootstrap.dat_)
     "80290404060ff7ff5bc6a42f755d24f6087ba5685474a5c8ffafac65de8b2bbf"
   ],
   "time": 1524496461,
-  "nonce": 67657104,
+  "nonce": 846737,
   "bits": "1e0ffff0",
   "difficulty": 0.000244140625,
   "chainwork": "0000000000000000000000000000000000000000000000000000000000100010",
-  "nextblockhash": "000002f68dbbf1fcfacb8f0b4e64083efdd2f07a906728ee068d573ffa5bcb4e",
+  "nextblockhash": "00000d32b7a30dcff512845caf636f22e8588264e781e94c40ab9ddbd1ba4806",
   "moneysupply": 0.00000000,
   "zSLXsupply": {
     "1": 0.00000000,
