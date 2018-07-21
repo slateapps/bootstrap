@@ -1,1 +1,5 @@
 *.dat
+*.tar.xz
+*.tar.gz
+*.zip
+*.7z
