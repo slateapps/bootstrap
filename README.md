@@ -1,4 +1,4 @@
-# Slate testnet bootstrap file
+# Slate bootstrap file (main) - 90199
 
 ### How to install
 
